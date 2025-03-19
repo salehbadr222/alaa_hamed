@@ -4,7 +4,6 @@
     --primary-color: #80CBC4;
     --secondary-color: #B4EBE6;
     --gray: #FBF8EF;
-    ;
     --bg-primary: #FFB433;
 }
 
@@ -75,7 +74,7 @@ header {
     background: url(img/bg.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    background-color: #5a4218;
+    background-color: var(--gray);
 }
 
 header .navbar {
@@ -162,6 +161,8 @@ nav.open {
     background-color: rgb(0 0 0 / 50%);
   }
 
+
+/* Header */
   header .body-content {
     display: flex;
     flex-direction: column;
@@ -170,9 +171,6 @@ nav.open {
     text-align: center;
     height: 100vh; /* يجعل المحتوى في منتصف الشاشة عمودياً */
 }
-
-/* header .body-content .content-text { */
-    /* margin-bottom: 5rem; */
 
 
 
@@ -212,10 +210,6 @@ nav.open {
     margin: 10px;
     ;
 }
-
-/* #home .body-content .social a i:hover { */
-    /* background-color: #02576e; */
-    /* border: #02576e, solid, 1px; */
 
 
 header .body-content img {
