@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap');
 
+
+
+
+
 :root {
-    --primary-color: #80CBC4;
-    --secondary-color: #B4EBE6;
-    --gray: #FBF8EF;
-    --bg-primary: #FFB433;
+    --primary-color: #383848;
+    --secondary-color: #9a9a9a;
+    --gray: #fff;
+    --bg-primary: #e4b95b;
+    --hover: #c48f1e;
+    
 }
 
 * {
@@ -69,12 +75,13 @@ a {
 
 /*body start*/
 header {
-    /* background-color: var(--bg-primary);*/
     height: 100%;
-    background: url(img/bg.jpg);
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.978), var(--hover)), 
+        url(img/bg.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    background-color: var(--gray);
+    background-position: center;
 }
 
 header .navbar {
@@ -92,8 +99,6 @@ header .navbar {
     width: 50px;
     height: 50px;
     display: flex;
-    background-color: white;
-    border-radius: 10PX;
     cursor: pointer;
     flex-wrap: wrap;
     align-items: center;
@@ -106,7 +111,7 @@ header .navbar {
     transition: 0.5s;
   }
   .toggle:hover span {
-    background-color: #1c8faedf;
+    background-color: var(--hover);
   }
   nav {
     position: fixed;
@@ -183,7 +188,7 @@ nav.open {
 #home .body-content h1 {
     font-size: 40px;
     font-weight: 800;
-    color: white;
+    color: var(--bg-primary);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     margin-top: 45px;
     margin-bottom: 30px;
@@ -212,13 +217,6 @@ nav.open {
 }
 
 
-header .body-content img {
-    max-width: 300px;
-    margin-bottom: 8rem;
-    border-radius: 150PX 150PX;
-    width: 300px;
-    height: 350px;
-}
 
 /* footer */
 #footer {
