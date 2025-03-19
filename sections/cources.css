@@ -1,0 +1,97 @@
+
+:root {
+    --primary-color: white;
+    --secondary-color: #53A3B6;
+    --gray: #033b4a;
+    ;
+    --bg-primary: #c57d98;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    font-size: large;
+    width: 80%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.course-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* start courses-section  */
+.course-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    background-color: white;
+    border-radius: 25px;
+}
+.course-section {
+    background-color: white;
+    padding: 15px 15px;
+    margin: 10px;
+    width: 80%;
+    border: 2px solid var(--gray);
+    box-shadow:4PX 4px 2px 3px rgb(63, 92, 129);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 15px;
+}
+
+.video-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.pdf-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s ease;
+
+}

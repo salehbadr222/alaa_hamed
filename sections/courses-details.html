@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الدورة</title>
+     <!--fontawesome-->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--fontawesome end -->
+     
+    <link rel="stylesheet" href="cources.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- زر الرجوع للصفحة السابقة -->
+     <!-- <button onclick="window.location.href='courses.html'">الرجوع</button> -->
+    <h1>مــحتـوى الــدورة</h1> 
+
+  <!-- start courses-details -->
+   <div class="course-section-container">
+      <div class="course-section">
+          <h1 onclick="toggleDropdown('week1')">
+         <svg width="40" height="40" viewBox="3 -5 10 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 8l6 6 6-6"/>
+              </svg>
+              الـــــــــدرس الأول
+          </h1>
+          <p>من الاتحاد الكيميائي حتى النظرية التساهمية</p>
+          <div id="week1" class="dropdown-content">
+              <button class="video-btn">🎥 تشغيل الفيديو</button>
+              <button class="pdf-btn">📄 تحميل الملف</button>
+          </div>
+      </div>
+
+  
+      <div class="course-section">
+          <h1 onclick="toggleDropdown('week2')">
+            <svg width="40" height="40" viewBox="3 -5 10 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 8l6 6 6-6"/>
+              </svg>
+              الـــدرس الـثــانــي
+          </h1>
+          <p>نظرية الثمانيات</p>
+          <div id="week2" class="dropdown-content">
+              <button class="video-btn">🎥 تشغيل الفيديو</button>
+              <button class="pdf-btn">📄 تحميل الملف</button>
+          </div>
+      </div>
+
+
+
+    </div>
+  <!-- end courses-details -->
+
+</body>
+</html>
